@@ -1,8 +1,8 @@
 // ----------------------
-// Tüm Agustos Menüsü
+// Tüm Eylül Menüsü
 // ----------------------
 
-fetch("FTA AGUSTOS YEMEK LİSTESİ.csv")
+fetch("FTA EYLUL YEMEK LİSTESİ.csv")
 .then(response => response.text())
 .then(data => {
 
@@ -47,7 +47,7 @@ fetch("FTA AGUSTOS YEMEK LİSTESİ.csv")
             } else {
 
                 tumMenuAlan.innerHTML = "";
-                buton.textContent = "📋 Tüm Agustos Menüsünü Göster";
+                buton.textContent = "📋 Tüm Eylül Menüsünü Göster";
                 acik = false;
 
             }
@@ -67,7 +67,7 @@ async function menuGetir(firma) {
 
     const dosya =
         firma === "fta"
-        ? "FTA AGUSTOS YEMEK LİSTESİ.csv"
+        ? "FTA EYLUL YEMEK LİSTESİ.csv"
         : "VIA TEMMUZ YEMEK LİSTESİ.csv";
 
     const cevap = await fetch(dosya);
